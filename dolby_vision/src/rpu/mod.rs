@@ -38,8 +38,9 @@ impl From<u8> for ConversionMode {
         match mode {
             0 => ConversionMode::Lossless,
             1 => ConversionMode::ToMel,
-            2 | 3 => ConversionMode::To81,
-            4 => ConversionMode::To84,
+            2 => ConversionMode::To81,
+            3 => ConversionMode::To84,
+            4 => ConversionMode::To81MappingPreserved,
             _ => ConversionMode::Lossless,
         }
     }
